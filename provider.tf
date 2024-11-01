@@ -5,7 +5,7 @@ terraform {
         version = "5.62.0"
     }
   }
-  backend "aws" {
+  backend "s3" {
     bucket = "neela-remote-state"
     key = "ec2-test-module"
     region = "us-east-1"
